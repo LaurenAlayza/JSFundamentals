@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Stuff</title>
+</head>
+<body>
+    <!-- <h1>Hello, World!</h1> -->
+    <p id="testParagraph">SampleText</p>
+    <p class='sampleClass'>This paragraph has the class of 'sampleClass'.</p>
+    <button id="clickThisButton">CLICK ME!</button>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Lauren"/>
+    <script>
+        // let x = 10;
+        // console.log(x);
+     let para = document.getElementById('testParagraph');
+     para.style.color = 'blue';
+     console.log(para.style.color);
+     console.log(document.querySelectorAll('p.sampleClass'));
+     document.querySelectorAll('p.sampleClass')[0].innerHTML = '<i>My text has changed!</i>';
+     document.getElementById('clickThisButton').addEventListener('click',(details) => {
+         console.log(details);
+        if (details.target.style.background == 'red'){
+            details.target.style.background = 'blue';
+        } else {
+            details.target.style.background = 'red';
+        }
+     })
+     document.getElementById('nameInput').addEventListener('keyup', e => {
+         console.log(e.target.value);
+         if (e.target.value == ""){
+             document.getElementsByTagName('p')[1].innerText = 'Nothing has been typed';
+         } else {
+             document.getElementsByTagName('p')[1].innerText = 'Everyone, say hello to ${e.target.value} right now!';
+         }
+         )
+     })
+    </script>
+</body>
+</html>
