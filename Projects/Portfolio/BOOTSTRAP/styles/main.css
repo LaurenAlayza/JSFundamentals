@@ -1,0 +1,19 @@
+.jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1567619435005-4d3be491538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-shadow: 2px 2px green;
+    text-align: center;
+}
+
+.aboutMe {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: darkgreen;
+}
+
+.form {
+    text-align: center;
+}
