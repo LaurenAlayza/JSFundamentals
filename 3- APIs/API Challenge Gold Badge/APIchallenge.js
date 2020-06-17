@@ -23,7 +23,7 @@ async function sendApiRequest(){ //sending a request and waiting for data to com
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
 function useApiData(data){
   document.querySelector('#content').innerHTML += data.explanation
-  document.querySelector('#content').innerHTML += `<img src="${data.url}">`
+  document.querySelector('#content').innerHTML += `<iframe src="${data.url}">`
 }
 
 

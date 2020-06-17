@@ -12,7 +12,7 @@
     <!--MY FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar navbar-expand-lg navbar-light bg-light" data-offset="50">
     
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,13 +23,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -47,6 +47,7 @@
   </div>
 
 <!--ABOUT ME-->
+<div id="home">
 <h1 class="aboutMe">Greetings!</h1>
 <p>
   Here is a paragraph about myself & accomplishments. Cupcake ipsum dolor. Sit amet candy gummi bears. Powder gingerbread oat cake sugar plum candy canes. Liquorice dragée gummies.
@@ -59,10 +60,11 @@
   
   Carrot cake dragée tiramisu. Bear claw soufflé carrot cake fruitcake wafer icing apple pie icing. Soufflé candy topping jelly beans powder pastry sugar plum donut cotton candy.
 </p>
+</div>
 
 <!--Portfolio Section-->
 <!-- <img src="assets/css creature.png" alt="Sad CSS Creature" class="img-thumbnail"> -->
-
+<div id="portfolio">
 <figure class="figure">
   <img src="assets/css creature.png" class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption">This is my CSS creature.</figcaption>
@@ -72,8 +74,17 @@
   <img src="assets/staticlayout.PNG" class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption">This is my Static Layout of https://devhints.io/.</figcaption>
 </figure>
+</div>
+
+<!--DOWNLOADABLE RESUME-->
+
+
+
+
+
 
 <!--CONTACT FORM-->
+<div id="contact">
 <h1 class="aboutMe">Let's connect!</h1>
 <form
   action="https://formspree.io/mbjzyppg"
@@ -92,14 +103,21 @@
 
   <button type="submit">Send</button>
 </form>
+</div>
 
 <!--FOOTER-->
 
 <footer>
   <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">Find me on LinkedIn!</li>
-    <li class="list-group-item">Find me on GitHub!</li>
-    <li class="list-group-item">Find me on Twitter!</li>
+    <li class="list-group-item">
+      <a href="https://www.linkedin.com/in/laurenalayza/" target="_blank">Let's Connect on LinkedIn!</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://github.com/LaurenAlayza" target="_blank">Go to my GitHub!</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://twitter.com/AlayzaCodes" target="_blank">Tweet @ Me!</a>
+    </li>
   </ul>  
 </footer>
 
